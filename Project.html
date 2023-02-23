@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lab 2</title>
-  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-  <nav>
-    <img src="/Logo2.png" alt="LOGO" width="80px">
+  <nav id="top_menu">
     <h1>Independance Psychiatric Association</h1>
     <ul>
       <li><a href="#">Home</a></li>
@@ -20,13 +19,14 @@
       <li><a href="#">Sign In</a></li>
     </ul>
   </nav>
+  <nav id="center_menu">
+    <img src="Logo2.png" alt="LOGO" width="60px">
+    <span id="search_bar">
+      <input type="search" name="q" placeholder="Search..." autocomplete="off">
+      <button type="submit">Search</button>
+    </span>
+  </nav>
   <main>
-    <section>
-      <h2>About Us</h2>
-      <p>IPA.ca Health s content is for informational and educational
-        purposes only. Our website is not intended to be a substitute for
-        professional medical advice, diagnosis, or treatment.</p>
-    </section>
     <section>
       <h2>Services</h2>
       <table>
@@ -77,9 +77,15 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </section>
+    <section>
+      <h2>About Us</h2>
+      <p>IPA.ca Health s content is for informational and educational
+        purposes only. Our website is not intended to be a substitute for
+        professional medical advice, diagnosis, or treatment.</p>
+    </section>
   </main>
   <footer>
-    <p>&copy; 2023 Our Website. All rights reserved.</p>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
   </footer>
 </body>
 
