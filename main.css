@@ -113,20 +113,20 @@ table {
 
 th,
 td {
-  border: 1px solid #c4c5c3;
+  border: 1px solid #111110;
   padding: 8px;
   text-align: left;
 }
 
 th {
-  background-color: #b3b1b0;
+  background-color: #2f4f4f;
 }
 
 /* Styles for the form */
 form {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #cccbca;
+  background-color: #696969;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
