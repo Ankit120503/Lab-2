@@ -48,7 +48,7 @@ a {
   background-color: #2f4f4f;
   color: #fff;
   padding: 2px 3% 1% 3%;
-  margin: 0%;
+  margin: 0.15%;
 }
 #search_bar {
   display: flex;
@@ -200,7 +200,7 @@ main {
 }
 
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -220,7 +220,7 @@ main {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 /* Links inside the dropdown */
@@ -232,7 +232,9 @@ main {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #276d49}
+.dropdown-content a:hover {
+  background-color: #276d49;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
