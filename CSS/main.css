@@ -171,7 +171,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #dcf046;
+  background-color: #e3f174;
   cursor: pointer;
 }
 
@@ -186,7 +186,7 @@ button[type="reset"] {
 }
 
 button[type="reset"]:hover {
-  background-color: #e44c31;
+  background-color: #ec6d57;
   cursor: pointer;
 }
 
