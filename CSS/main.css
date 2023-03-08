@@ -3,6 +3,7 @@
   margin: 3;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Global styles */
@@ -19,6 +20,7 @@ body {
   text-align: center;
   font-size: x-large;
 }
+
 h1,
 h2,
 h3,
@@ -26,6 +28,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 a {
@@ -41,14 +44,6 @@ a {
   background-color: #2f4f4f;
   color: #fff;
   padding: 10px;
-}
-.last {
-  justify-content: space-between;
-  align-items: center;
-  background-color: #2f4f4f;
-  color: #fff;
-  padding: 2px 3% 1% 3%;
-  margin: 0.15%;
 }
 #search_bar {
   display: flex;
@@ -71,14 +66,15 @@ input[type="Search"] {
   outline: none;
 }
 
-button {
+.signin {
   padding: 5px;
   border: none;
-  background-color: #007bff;
   color: #fff;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
+  background: rgb(13, 153, 160);
 }
+
 ul {
   margin-left: 20px;
 }
@@ -101,14 +97,17 @@ nav ul li:last-child {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 5px;
+  padding: 4px;
   border-radius: 5px;
 }
 
 nav ul li a:hover {
-  background-color: #555;
+  background-color: #5e5756;
 }
 
+.cont_men {
+  margin: 0% 3%;
+}
 /* Styles for the service prices table */
 table {
   border-collapse: collapse;
@@ -124,7 +123,8 @@ td {
 }
 
 th {
-  background-color: #2f4f4f;
+  background-color: #227d4a;
+  color: #fff;
 }
 
 /* Styles for the form */
@@ -171,8 +171,25 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #555;
+  background-color: #dcf046;
+  cursor: pointer;
 }
+
+button[type="reset"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="reset"]:hover {
+  background-color: #e44c31;
+  cursor: pointer;
+}
+
 img {
   margin: 20px;
 }
@@ -187,10 +204,6 @@ img {
   box-shadow: 0px 0px 5px 0px black;
 }
 
-.cont_men {
-  margin: 0% 3%;
-}
-
 .logo {
   width: 50px;
 }
@@ -200,12 +213,14 @@ main {
 }
 
 .dropbtn {
-  background-color: #4caf50;
+  background-color: #247949;
   color: white;
-  padding: 16px;
+  padding: 15px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  border-radius: 8px;
+  border-radius: 8px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -222,6 +237,8 @@ main {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 8px;
+  border-radius: 8px;
 }
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -233,7 +250,8 @@ main {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #276d49;
+  background-color: #df1a17;
+  border-radius: 15px;
 }
 
 /* Show the dropdown menu on hover */
@@ -243,5 +261,116 @@ main {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #e4e827;
+}
+
+/* Footer styles */
+
+.last {
+  background-color: #2f4f4f;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 3% 1% 3%;
+  margin: 0.15%;
+}
+
+.last h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: darkorange;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.last h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.last div {
+  margin-bottom: 15px;
+}
+
+.last label {
+  font-size: 1.1rem;
+  margin-right: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.last input {
+  padding: 5px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 200px;
+}
+
+.last button {
+  padding: 5px 15px;
+  background-color: rgb(56, 56, 53);
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.last button:hover {
+  background-color: rgb(218, 57, 13);
+}
+
+.last p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: gold;
+}
+
+.last hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.last nav ul {
+  list-style: armenian;
+  margin: 0;
+  padding: 0;
+}
+
+.last nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.last nav ul li a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fcfbfb;
+}
+
+.last nav ul li a:hover {
+  color: #0077cc;
+}
+
+.last h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.last p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.last h6 {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  text-align: center;
+  color: #999;
+  font-family: "Times New Roman", Times, serif;
 }
