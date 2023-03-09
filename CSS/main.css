@@ -108,30 +108,50 @@ nav ul li a:hover {
 .cont_men {
   margin: 0% 3%;
 }
-/* Styles for the service prices table */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 20px;
-}
 
-th,
-td {
-  border: 1px solid #111110;
-  padding: 8px;
-  text-align: left;
+/*grid content and price/services related stuff */
+.gridstuff { /*to push the grid to the center*/
+  display: flex;
+  justify-content: center;
 }
-
-th {
-  background-color: #227d4a;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /*3 columns with equal width */
+}
+.grid-item {
+  background-color: #fff; 
+  padding: 10px 100px;
+  margin: 2px 0px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center text horizontally */
+}
+.plan-name {
+  grid-column: 1 / span 1; /* Span 2 columns starting from column 1 **************Names of plan*****/
+  background-color: #6babab;
   color: #fff;
+  font-weight: bold;
 }
+.plan-price {
+  grid-column: 2; /* Start at column 2 */
+  background-color: #a0eeee;
+  font-weight: bold; /* Bold font for plan price *//******************************prices**/
+}
+.plan-name:nth-child(1){/*for 1st tag that that applys this class*****************Services******/
+	background-color:#2f4f4f;
+}
+.plan-price:nth-child(2){/*for 2nd tag that that applys this class****************Pricing******/
+	background-color:#258282;
+  color: #fff;
+} 
 
 /* Styles for the form */
 form {
   color: white;
   max-width: 600px;
   margin: 0 auto;
+  /* display: flex;
+  flex-direction: column; */
   background-color: #696969;
   padding: 20px;
   border-radius: 5px;
@@ -373,4 +393,31 @@ main {
   text-align: center;
   color: #999;
   font-family: "Times New Roman", Times, serif;
+}
+
+/* CSS for tablets */
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+/* CSS for smaller tablets and large phones */
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding: 0 10px;
+  }
+}
+/* CSS for portrait orientation */
+@media only screen and (orientation: portrait) {
+  .container {
+    max-width: 720px;
+  }
+}
+/* CSS for smaller phones */
+@media only screen and (max-width: 360px) {
+  .container {
+    max-width: 320px;
+    padding: 0 5px;
+  }
 }
