@@ -2,8 +2,15 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
+}
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 16px;
+  }
 }
 
 /* Global styles */
@@ -34,6 +41,24 @@ h6 {
 a {
   color: #333;
   text-decoration: none;
+}
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  #Title {
+    font-size: large;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 10px;
+  }
 }
 
 /* Styles for the navigation menu */
@@ -109,49 +134,104 @@ nav ul li a:hover {
   margin: 0% 3%;
 }
 
-/*grid content and price/services related stuff */
-.gridstuff { /*to push the grid to the center*/
-  display: flex;
-  justify-content: center;
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  #top_menu {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+  }
+  #center_menu {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+  }
+  input[type="Search"] {
+    width: 100%;
+    border-radius: 5px;
+  }
+  ul {
+      margin-left: 10px;
+    }
+    nav ul {
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .cont_men {
+      margin: 0;
+    }
+    .signin {
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+  }
+  /* Styles for the service prices table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /*3 columns with equal width */
+
+th,
+td {
+  border: 1px solid #111110;
+  padding: 8px;
+  text-align: center;
 }
-.grid-item {
-  background-color: #fff; 
-  padding: 10px 100px;
-  margin: 2px 0px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  text-align: center; /* Center text horizontally */
-}
-.plan-name {
-  grid-column: 1 / span 1; /* Span 2 columns starting from column 1 **************Names of plan*****/
-  background-color: #6babab;
+
+th {
+  background-color: #227d4a;
   color: #fff;
-  font-weight: bold;
+  align-items: center;
 }
-.plan-price {
-  grid-column: 2; /* Start at column 2 */
-  background-color: #a0eeee;
-  font-weight: bold; /* Bold font for plan price *//******************************prices**/
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+  th,
+  td {
+    padding: 6px;
+    font-size: 12px;
+    align-items: center;
+  }
+  th {
+    font-size: 14px;
+    align-items: center;
+  }
 }
-.plan-name:nth-child(1){/*for 1st tag that that applys this class*****************Services******/
-	background-color:#2f4f4f;
+
+/* Styles for the service prices table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
 }
-.plan-price:nth-child(2){/*for 2nd tag that that applys this class****************Pricing******/
-	background-color:#258282;
+
+th,
+td {
+  border: 1px solid #111110;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #227d4a;
   color: #fff;
-} 
+}
 
 /* Styles for the form */
 form {
   color: white;
   max-width: 600px;
   margin: 0 auto;
-  /* display: flex;
-  flex-direction: column; */
   background-color: #696969;
   padding: 20px;
   border-radius: 5px;
@@ -231,6 +311,84 @@ img {
 main {
   margin: 0% 3%;
 }
+
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  form {
+    padding: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+ /* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #df1a17;
+  border-radius: 15px;
+}
+
+/* Show the dropdown menu on click */
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:focus-within .dropbtn {
+  background-color: #e4e827;
+}
+
+@media screen and (max-width: 600px) {
+  /* Reduce padding on dropdown button for smaller screens */
+  .dropbtn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Increase width of dropdown content for smaller screens */
+  .dropdown-content {
+    min-width: 120px;
+  }
+
+  /* Make dropdown menu full width on smaller screens */
+  .dropdown-content a {
+    width: 100%;
+  }
+}
+
 
 .dropbtn {
   background-color: #247949;
@@ -395,29 +553,21 @@ main {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* CSS for tablets */
-@media only screen and (max-width: 768px) {
-  .container {
-    max-width: 720px;
+/* Footer styles for mobile phones */
+@media screen and (max-width: 480px) {
+  .last {
+    padding: 10px;
   }
-}
-/* CSS for smaller tablets and large phones */
-@media only screen and (max-width: 576px) {
-  .container {
-    max-width: 540px;
-    padding: 0 10px;
+
+  .last h2 {
+    font-size: 1.2rem;
   }
-}
-/* CSS for portrait orientation */
-@media only screen and (orientation: portrait) {
-  .container {
-    max-width: 720px;
+
+  .last h3 {
+    font-size: 1rem;
   }
-}
-/* CSS for smaller phones */
-@media only screen and (max-width: 360px) {
-  .container {
-    max-width: 320px;
-    padding: 0 5px;
+
+  .last input {
+    width: 100%;
   }
 }
