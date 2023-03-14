@@ -571,3 +571,15 @@ main {
     width: 100%;
   }
 }
+
+iframe{
+  height: auto;
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  iframe{
+    max-width: fit-content;
+  }
+  
+}
