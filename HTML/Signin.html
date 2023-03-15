@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IPA Login Page</title>
-    <link rel="stylesheet" href="/CSS/Signin.css">
-</head>
+    <link rel="stylesheet" href="/CSS/Signin.css" />
+  </head>
 
-<body>
+  <body>
     <h2>IPA Login</h2>
     <div class="container">
-        <form>
-            <div class="imagecontainer">
-                <img src="/IMAGES/Logo2.png" alt="LOGO.1" class="LOGO">
-            </div>
-            <label for="username"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="username" required>
-            <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        </form>
-        <div class="container">
-            <button type="button" class="cancelbutton">Cancel</button>
-            <span class="password">Forgot <a href="#">password?</a></span>
+      <form>
+        <div class="imagecontainer">
+          <img src="/IMAGES/Logo2.png" alt="LOGO.1" class="LOGO" />
         </div>
+        <label for="username"><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="username"
+          required
+        />
+        <label for="password"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+      </form>
+      <div class="container">
+        <button type="button" class="cancelbutton">Cancel</button>
+        <span class="password">Forgot <a href="#">password?</a></span>
+      </div>
     </div>
-</body>
+  </body>
 </html>
