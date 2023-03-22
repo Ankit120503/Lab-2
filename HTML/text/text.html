@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+       nav ul {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline-flex;
+            width: 23%;
+            font-size: 15px;
+            line-height: 60px;
+            border: 1px solid red;
+            
+        }
+
+        @media only screen and(max-width: 600px) {
+            li {
+                display: block;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Services</li>
+            <li>Team</li>
+        </ul>
+    </nav>
+    <div class="content"></div>
+    <h3>Enter your choice of conversation in the below text box</h3>
+    <h5>1.Weight ( pound to kilogram)</h5>
+    <h5>2.Distance( miles to kilogram)</h5>
+    <h5>3 Temperature(Farenhite to celcius)</h5>
+    <div class="user-acess">
+        <div class="input"><input type="text" placeholder="Type 1,2 or3 ">
+            <div class="btn"><input type="button" onclick="window.location.href=Text" value="|Submit">
+            </div>
+
+
+</body>
+
+</html>
